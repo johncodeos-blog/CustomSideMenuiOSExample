@@ -7,23 +7,43 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C20E9E2225E1B79B001B1A11 /* SideMenuModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20E9E2125E1B79A001B1A11 /* SideMenuModel.swift */; };
 		C25EF4CE25D067D00086441F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C25EF4CD25D067D00086441F /* AppDelegate.swift */; };
 		C25EF4D025D067D00086441F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C25EF4CF25D067D00086441F /* SceneDelegate.swift */; };
-		C25EF4D225D067D00086441F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C25EF4D125D067D00086441F /* ViewController.swift */; };
+		C25EF4D225D067D00086441F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C25EF4D125D067D00086441F /* HomeViewController.swift */; };
 		C25EF4D525D067D00086441F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C25EF4D325D067D00086441F /* Main.storyboard */; };
 		C25EF4D725D067D20086441F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C25EF4D625D067D20086441F /* Assets.xcassets */; };
 		C25EF4DA25D067D20086441F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C25EF4D825D067D20086441F /* LaunchScreen.storyboard */; };
+		C25EF4E425D06A430086441F /* SideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C25EF4E325D06A430086441F /* SideMenuViewController.swift */; };
+		C25EF4EA25D06B6A0086441F /* SideMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C25EF4E825D06B6A0086441F /* SideMenuCell.swift */; };
+		C25EF4EB25D06B6A0086441F /* SideMenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C25EF4E925D06B6A0086441F /* SideMenuCell.xib */; };
+		C25EF52C25D09AC30086441F /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C25EF52B25D09AC30086441F /* MainViewController.swift */; };
+		C2DE6A2F25D2CEA7002B885A /* MusicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2DE6A2E25D2CEA7002B885A /* MusicViewController.swift */; };
+		C2DE6A3225D2CEB2002B885A /* MoviesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2DE6A3125D2CEB2002B885A /* MoviesViewController.swift */; };
+		C2DE6A3525D2CEBD002B885A /* BooksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2DE6A3425D2CEBD002B885A /* BooksViewController.swift */; };
+		C2DE6A3825D2CEC8002B885A /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2DE6A3725D2CEC8002B885A /* ProfileViewController.swift */; };
+		C2DE6A3B25D2CED4002B885A /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2DE6A3A25D2CED4002B885A /* SettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C20E9E2125E1B79A001B1A11 /* SideMenuModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuModel.swift; sourceTree = "<group>"; };
 		C25EF4CA25D067D00086441F /* CustomSideMenuiOSExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomSideMenuiOSExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C25EF4CD25D067D00086441F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C25EF4CF25D067D00086441F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C25EF4D125D067D00086441F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C25EF4D125D067D00086441F /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		C25EF4D425D067D00086441F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C25EF4D625D067D20086441F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C25EF4D925D067D20086441F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C25EF4DB25D067D20086441F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C25EF4E325D06A430086441F /* SideMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuViewController.swift; sourceTree = "<group>"; };
+		C25EF4E825D06B6A0086441F /* SideMenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuCell.swift; sourceTree = "<group>"; };
+		C25EF4E925D06B6A0086441F /* SideMenuCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SideMenuCell.xib; sourceTree = "<group>"; };
+		C25EF52B25D09AC30086441F /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		C2DE6A2E25D2CEA7002B885A /* MusicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicViewController.swift; sourceTree = "<group>"; };
+		C2DE6A3125D2CEB2002B885A /* MoviesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesViewController.swift; sourceTree = "<group>"; };
+		C2DE6A3425D2CEBD002B885A /* BooksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksViewController.swift; sourceTree = "<group>"; };
+		C2DE6A3725D2CEC8002B885A /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		C2DE6A3A25D2CED4002B885A /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +57,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C22DF82F25D1917200FEB621 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C25EF4D125D067D00086441F /* HomeViewController.swift */,
+				C2DE6A2E25D2CEA7002B885A /* MusicViewController.swift */,
+				C2DE6A3125D2CEB2002B885A /* MoviesViewController.swift */,
+				C2DE6A3425D2CEBD002B885A /* BooksViewController.swift */,
+				C2DE6A3725D2CEC8002B885A /* ProfileViewController.swift */,
+				C2DE6A3A25D2CED4002B885A /* SettingsViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		C25EF4C125D067D00086441F = {
 			isa = PBXGroup;
 			children = (
@@ -56,15 +89,36 @@
 		C25EF4CC25D067D00086441F /* CustomSideMenuiOSExample */ = {
 			isa = PBXGroup;
 			children = (
-				C25EF4CD25D067D00086441F /* AppDelegate.swift */,
-				C25EF4CF25D067D00086441F /* SceneDelegate.swift */,
-				C25EF4D125D067D00086441F /* ViewController.swift */,
+				C22DF82F25D1917200FEB621 /* Views */,
+				C25EF4E225D06A2D0086441F /* SideMenu */,
+				C25EF52B25D09AC30086441F /* MainViewController.swift */,
 				C25EF4D325D067D00086441F /* Main.storyboard */,
 				C25EF4D625D067D20086441F /* Assets.xcassets */,
 				C25EF4D825D067D20086441F /* LaunchScreen.storyboard */,
+				C25EF4CD25D067D00086441F /* AppDelegate.swift */,
+				C25EF4CF25D067D00086441F /* SceneDelegate.swift */,
 				C25EF4DB25D067D20086441F /* Info.plist */,
 			);
 			path = CustomSideMenuiOSExample;
+			sourceTree = "<group>";
+		};
+		C25EF4E225D06A2D0086441F /* SideMenu */ = {
+			isa = PBXGroup;
+			children = (
+				C25EF4ED25D06B740086441F /* Cell */,
+				C20E9E2125E1B79A001B1A11 /* SideMenuModel.swift */,
+				C25EF4E325D06A430086441F /* SideMenuViewController.swift */,
+			);
+			path = SideMenu;
+			sourceTree = "<group>";
+		};
+		C25EF4ED25D06B740086441F /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				C25EF4E825D06B6A0086441F /* SideMenuCell.swift */,
+				C25EF4E925D06B6A0086441F /* SideMenuCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,6 +181,7 @@
 				C25EF4DA25D067D20086441F /* LaunchScreen.storyboard in Resources */,
 				C25EF4D725D067D20086441F /* Assets.xcassets in Resources */,
 				C25EF4D525D067D00086441F /* Main.storyboard in Resources */,
+				C25EF4EB25D06B6A0086441F /* SideMenuCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,9 +192,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C25EF4D225D067D00086441F /* ViewController.swift in Sources */,
+				C25EF4E425D06A430086441F /* SideMenuViewController.swift in Sources */,
+				C2DE6A2F25D2CEA7002B885A /* MusicViewController.swift in Sources */,
+				C2DE6A3B25D2CED4002B885A /* SettingsViewController.swift in Sources */,
+				C2DE6A3825D2CEC8002B885A /* ProfileViewController.swift in Sources */,
+				C25EF52C25D09AC30086441F /* MainViewController.swift in Sources */,
+				C25EF4EA25D06B6A0086441F /* SideMenuCell.swift in Sources */,
+				C25EF4D225D067D00086441F /* HomeViewController.swift in Sources */,
 				C25EF4CE25D067D00086441F /* AppDelegate.swift in Sources */,
+				C20E9E2225E1B79B001B1A11 /* SideMenuModel.swift in Sources */,
 				C25EF4D025D067D00086441F /* SceneDelegate.swift in Sources */,
+				C2DE6A3225D2CEB2002B885A /* MoviesViewController.swift in Sources */,
+				C2DE6A3525D2CEBD002B885A /* BooksViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
