@@ -176,6 +176,13 @@ extension MainViewController: SideMenuViewControllerDelegate {
         vc.view.tag = 99
         view.insertSubview(vc.view, at: self.revealSideMenuOnTop ? 0 : 1)
         addChild(vc)
+        vc.view.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate([
+            vc.view.leadingAnchor.constraint(equalTo: self.view.leadingAnchor),
+            vc.view.topAnchor.constraint(equalTo: self.view.topAnchor),
+            vc.view.bottomAnchor.constraint(equalTo: self.view.bottomAnchor),
+            vc.view.trailingAnchor.constraint(equalTo: self.view.trailingAnchor)
+        ])
         if !self.revealSideMenuOnTop {
             if isExpanded {
                 vc.view.frame.origin.x = self.sideMenuRevealWidth
