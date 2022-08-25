@@ -27,6 +27,8 @@ class MainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = #colorLiteral(red: 0.737254902, green: 0.1294117647, blue: 0.2941176471, alpha: 1)
+        // Navigation Bar Appearance
+        self.setNavBarAppearance(tintColor: .white, barColor: UIColor(#colorLiteral(red: 0.737254902, green: 0.1294117647, blue: 0.2941176471, alpha: 1)))
 
         // Shadow Background View
         self.sideMenuShadowView = UIView(frame: self.view.bounds)
@@ -36,7 +38,7 @@ class MainViewController: UIViewController {
         let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(TapGestureRecognizer))
         tapGestureRecognizer.numberOfTapsRequired = 1
         tapGestureRecognizer.delegate = self
-        view.addGestureRecognizer(tapGestureRecognizer)
+        self.sideMenuShadowView.addGestureRecognizer(tapGestureRecognizer)
         if self.revealSideMenuOnTop {
             view.insertSubview(self.sideMenuShadowView, at: 1)
         }
@@ -71,6 +73,17 @@ class MainViewController: UIViewController {
 
         // Default Main View Controller
         showViewController(viewController: UINavigationController.self, storyboardId: "HomeNavID")
+    }
+
+    func setNavBarAppearance(tintColor: UIColor, barColor: UIColor) {
+        let appearance = UINavigationBarAppearance()
+        appearance.configureWithOpaqueBackground()
+        appearance.backgroundColor = barColor
+        appearance.titleTextAttributes = [.foregroundColor: tintColor]
+        UINavigationBar.appearance().standardAppearance = appearance
+        UINavigationBar.appearance().scrollEdgeAppearance = appearance
+        UINavigationBar.appearance().isTranslucent = false
+        UINavigationBar.appearance().tintColor = tintColor
     }
 
     // Keep the state of the side menu (expanded or collapse) in rotation
@@ -176,13 +189,15 @@ extension MainViewController: SideMenuViewControllerDelegate {
         vc.view.tag = 99
         view.insertSubview(vc.view, at: self.revealSideMenuOnTop ? 0 : 1)
         addChild(vc)
-        vc.view.translatesAutoresizingMaskIntoConstraints = false
-        NSLayoutConstraint.activate([
-            vc.view.leadingAnchor.constraint(equalTo: self.view.leadingAnchor),
-            vc.view.topAnchor.constraint(equalTo: self.view.topAnchor),
-            vc.view.bottomAnchor.constraint(equalTo: self.view.bottomAnchor),
-            vc.view.trailingAnchor.constraint(equalTo: self.view.trailingAnchor)
-        ])
+        DispatchQueue.main.async {
+            vc.view.translatesAutoresizingMaskIntoConstraints = false
+            NSLayoutConstraint.activate([
+                vc.view.leadingAnchor.constraint(equalTo: self.view.leadingAnchor),
+                vc.view.topAnchor.constraint(equalTo: self.view.topAnchor),
+                vc.view.bottomAnchor.constraint(equalTo: self.view.bottomAnchor),
+                vc.view.trailingAnchor.constraint(equalTo: self.view.trailingAnchor)
+            ])
+        }
         if !self.revealSideMenuOnTop {
             if isExpanded {
                 vc.view.frame.origin.x = self.sideMenuRevealWidth
